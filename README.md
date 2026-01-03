@@ -10,12 +10,14 @@ The study is explicitly framed as a risk stratification and early warning feasib
 **Research objectives**
 
 The primary objectives of this study are to:
+
 	1.	Evaluate associations between diabetes, metabolic dysfunction, and lifestyle indicators with early liver injury risk.
 	2.	Assess whether multivariable combinations of these indicators can stratify risk beyond single-factor analyses.
 	3.	Examine the feasibility of producing calibrated probabilistic risk scores suitable for early warning or screening prioritisation contexts.
 	4.	Provide evidence to inform future longitudinal modelling and digital health risk-stratification applications.
 
 **Data source**
+
 	•	Dataset: National Health and Nutrition Examination Survey (NHANES)
 	•	Data domains used:
 	•	Demographics
@@ -34,24 +36,30 @@ Because NHANES does not provide a direct label for early-stage liver cancer, the
 **Analytical approach**
 
 The analysis follows a structured, stepwise framework:
+
 	1.	Data preparation and variable harmonisation
 	•	Merging multiple NHANES data files
 	•	Consistent variable renaming and standardisation
 	•	Missingness assessment and sample derivation
+	
 	2.	Exploratory data analysis
 	•	Distributional assessment
 	•	Identification of skewness and sparsity
 	•	Informing appropriate statistical tests and modelling strategies
+	
 	3.	Unadjusted association testing
 	•	Mann–Whitney U tests for continuous variables
 	•	Chi-square tests for categorical variables
+	
 	4.	Adjusted multivariable modelling
 	•	Logistic regression with L1 regularisation
 	•	Regularisation used to address sparsity and high-dimensional categorical encoding
+	
 	5.	Risk stratification and evaluation
 	•	Predicted probability estimation
 	•	Risk decile analysis and lift assessment
 	•	Model discrimination using ROC AUC
+	
 	6.	Calibration assessment
 	•	Calibration curves
 	•	Brier score evaluation
@@ -62,6 +70,7 @@ The results are interpreted strictly within a risk stratification and feasibilit
 **Reproducibility**
 
 To reproduce the analysis:
+
 	1.	Clone the repository.
 	2.	Ensure a Python environment with standard data science libraries (pandas, numpy, scipy, statsmodels, scikit-learn, matplotlib, seaborn).
 	3.	Open and run the Jupyter notebook sequentially.
@@ -79,6 +88,7 @@ The core analytical pipeline, including data preparation, statistical modelling,
 **Intended use**
 
 This repository supports:
+
 	•	Academic coursework submission
 	•	Manuscript preparation for publication
 	•	Reproducible population health analysis
@@ -86,6 +96,7 @@ This repository supports:
 
 
 **Limitations**
+
 	•	Cross-sectional design limits causal inference.
 	•	Early liver injury is represented using a biochemical proxy rather than confirmed clinical diagnosis.
 	•	Missingness and low prevalence of some clinical conditions constrain subgroup analysis.
