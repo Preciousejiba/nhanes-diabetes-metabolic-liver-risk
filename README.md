@@ -1,4 +1,4 @@
-# Evaluating Diabetes, Metabolic Dysfunction, and Lifestyle Indicators for Early Liver Injury Risk Stratification
+# Evaluation of Metabolic and Lifestyle Indicators for Hepatocellular Carcinoma Risk Stratification
 A Population-Level Feasibility Study Using NHANES
 
 **Project Overview**
